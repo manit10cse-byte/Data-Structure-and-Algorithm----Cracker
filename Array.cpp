@@ -162,65 +162,41 @@ int main() {
 
     return 0;
 }
-// #include<iostream>
-// using namespace std;
-// void Arrayintersection(int arr1[],int n,int arr2[],int m){
-//     for(int i=0;i<n;i++){
-//         int count=0;
-//         for(int j=0;j<m;j++){
-//             if(arr1[i]==arr2[j]){
-//                 count++;
-//             }
-//         }
-//         if(count==1){
-//             cout<<arr1[i]<<" ";
-//         }
-//     }
-// }
-// int main(){
-//     int n;
-//     cout<<"Enter the size of 1st array : ";
-//     cin>>n;
-//     int arr1[n];
-//     cout<<"Enter the elements of 1st array : ";
-//     for(int i=0;i<n;i++){
-//         cin>>arr1[i];
-//     }
-//     int m;
-//     cout<<"Enter the size of 2nd array : ";
-//     cin>>m;
-//     int arr2[m];
-//     cout<<"Enter the elements of 2nd array : ";
-//     for(int i=0;i<m;i++){
-//         cin>>arr2[i];
-//     }
-//     cout<<"Intersection of two array : ";
-//     Arrayintersection(arr1,n,arr2,m);
-//     cout<<endl;
-// // }
-// #include<iostream>
-// #include<vector>
-//  using namespace std;
-// void maxSubArray(vector<int>& nums) {
-//         int currsum=0;
-//         int Maxsum=INT8_MIN;
-//         for(int st=0;st<5;st++){
-//             for(int end=st;end<=st;end++){
-//                 currsum+=nums[end];
-//                 Maxsum=max(currsum,Maxsum);
-//                 if(currsum<0){
-//                     currsum=0;
-//                 }
-//             }
-//         }
-//         cout<<Maxsum<<endl;
-//     }
-// int main(){
-//     vector<int>nums;
-//     nums.push_back(1);
-//     nums.push_back(2);
-//     nums.push_back(3);
-//     nums.push_back(4);
-//     nums.push_back(5);
-//     maxSubArray(nums);
-// }
+//Write a function to find the intersection of two array's :--
+#include<iostream>
+using namespace std;
+void Arrayintersection(int arr1[],int n,int arr2[],int m){
+    for(int i=0;i<n;i++){
+        int count=0;
+        for(int j=0;j<m;j++){
+            if(arr1[i]==arr2[j]){
+                count++;
+            }
+        }
+        if(count==1){
+            cout<<arr1[i]<<" ";
+        }
+    }
+}
+int main(){
+    int n;
+    cout<<"Enter the size of 1st array : ";
+    cin>>n;
+    int arr1[n];
+    cout<<"Enter the elements of 1st array : ";
+    for(int i=0;i<n;i++){
+        cin>>arr1[i];
+    }
+    int m;
+    cout<<"Enter the size of 2nd array : ";
+    cin>>m;
+    int arr2[m];
+    cout<<"Enter the elements of 2nd array : ";
+    for(int i=0;i<m;i++){
+        cin>>arr2[i];
+    }
+    cout<<"Intersection of two array : ";
+    Arrayintersection(arr1,n,arr2,m);
+    cout<<endl;
+}
+
