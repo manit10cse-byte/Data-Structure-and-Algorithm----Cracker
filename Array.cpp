@@ -1,4 +1,4 @@
-////Write a function to find the smallest and largest element of the array:
+//Write a function to find the smallest and largest element of the array:
 #include <iostream>
 #include <climits>
 using namespace std;
